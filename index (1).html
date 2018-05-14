@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {margin:0;}
+
+.topnav {
+  overflow: hidden;
+  background-color: black;
+
+
+}
+
+.topnav a {
+  float: left;
+  color: white;
+  text-align:  center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: red;
+  color: white;
+}
+
+#home{
+background-color: #333;
+}
+#home:hover{
+background-color: red
+}
+
+#xyz{
+color:white;
+font-family:"Lucida Console";
+}
+
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    margin-left:30%;
+    margin-top:50px;
+}
+
+input[type=text]:focus {
+    width:40%;
+border: 2px solid red;
+}
+
+.container{
+padding-left:45%;
+padding-top:10%; 
+}
+
+.container1{
+display:inline-block; 
+font-family:Arial; 
+}
+.container1 a:hover{
+color:red;
+}
+.container2{
+display:inline-block; 
+padding-left:20px;
+font-family:Arial;
+}
+.container2 a:hover{
+color:red;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+<a id="home" href="#home">Home</a>
+  <a class="active" href="#movies">Movies</a>
+  <a href="#events">Events</a>
+  <a href="#plays">Plays</a>
+  <a href="#sports">Sports</a>
+</div>
+
+<div style="padding-left:16px; background-color:rgba(3,3,3,0.3); padding:20px">
+  <h2 id="xyz">My Booking Site</h2>
+  
+</div>
+<form>
+  <input type="text" name="search" placeholder="Search..">
+</form>
+<div class="container">
+  <div class="container1" ><a>Now showing</a></div>
+  <div class="container2" ><a>Coming Soon</a></div>
+</div>
+</body>
+</html>
